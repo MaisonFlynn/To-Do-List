@@ -1,3 +1,4 @@
+<!-- Maison Flynn #8750359 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -110,25 +111,28 @@
         content: '';
         position: absolute;
         left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
         width: 30px;
         height: 30px;
         background: #fafafa;
         border-radius: 50%;
       }
-      .box li.done {
-        background: #dcdcdc;
-        text-decoration: line-through;
-      }
+
       .box li.done::after {
         content: '';
         position: absolute;
-        left: 15px;
-        bottom: 20px;
+        left: 22.5px;
+        top: 47.5%;
+        transform: translate(-50%, -50%) rotate(315deg);
         width: 12px;
         height: 6px;
         border-left: 2px solid #333;
         border-bottom: 2px solid #333;
-        transform: rotate(315deg);
+      }
+      .box li.done {
+        background: #dcdcdc;
+        text-decoration: line-through;
       }
       #list {
         position: relative;
